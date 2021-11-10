@@ -1,6 +1,7 @@
 :root {
   --branding-color: #a7bcb9;
   --secondary-color: #38598b;
+  --tertiary-color: #7b93bc;
   --button-color: #f0d78c;
   --heading-font-family: "Baloo Da 2", cursive;
   --default-font-family: "Tauri", sans-serif;
@@ -20,10 +21,12 @@ h2 {
 h2 {
   opacity: 0.9;
   font-size: 24px;
+  line-height: 1.5;
 }
 
 h3 {
   font-family: var(--heading-font-family);
+  opacity: 0.8;
 }
 
 p {
@@ -33,19 +36,58 @@ p {
   opacity: 0.7;
 }
 
-.dragonboat {
-  max-width: 70%;
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--tertiary-color);
+}
+
+.container-about ul {
+  list-style-type: none;
+  font-family: var(--default-font-family);
+  color: black;
+  opacity: 0.7;
+  font-size: 20px;
+  margin: 20px auto;
+  line-height: 2;
+  text-align: left;
+}
+
+.active {
+  color: var(--secondary-color) !important;
+}
+
+.hamburgalster {
+  max-width: 65%;
   border-radius: 4px;
   display: block;
-  margin: 15px auto;
+  margin: 0 auto;
+}
+
+.profilbild {
+  max-width: 80%;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
+.hamburggraffiti {
+  max-width: 45%;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
 }
 
 .blog-glimpse p {
   text-align: left;
-  margin: 30px auto;
   color: black;
   opacity: 0.7;
-  font-size: 18px;
+  font-size: 16px;
+  margin: 20px auto;
+  line-height: 2;
 }
 
 .hero {
@@ -59,25 +101,46 @@ p {
 
 .hero p {
   margin: 0;
+  opacity: 0.8;
 }
 
 .hero-2 p {
   color: black;
   opacity: 0.7;
   font-size: 18px;
+  line-height: 1.6;
 }
 
 .btn-branding {
-  background: var(--button-color);
+  background: var(--tertiary-color);
   border-radius: 4px;
-  border-color: var(--secondary-color);
-  color: var(--secondary-color);
+  border: 1px solid var();
+  color: var(--button-color);
   font-size: 16px;
   font-family: var(--heading-font-family);
-  box-shadow: 10px 5px 5px grey;
-  margin: 20px;
+  box-shadow: 8px 4px 4px lightgrey;
+  opacity: 0.8;
 }
 
 .btn-branding:hover {
-  color: var(--branding-color);
+  color: var(--secondary-color);
+}
+
+.btn-brandingapp {
+  background: var(--tertiary-color);
+  border-radius: 4px;
+  border: 1px solid var();
+  color: var(--button-color);
+  font-size: 16px;
+  font-family: var(--heading-font-family);
+  box-shadow: 8px 4px 4px lightgrey;
+}
+
+.btn-brandingapp:hover {
+  color: var(--secondary-color);
+}
+
+.container-about {
+  margin: 90px;
+  text-align: center;
 }

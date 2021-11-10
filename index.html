@@ -35,42 +35,87 @@
     ></script>
   </head>
   <body>
-      <div class="hero">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="logo" href="/">Mein Logo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/about-me.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="hero">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 mt-4">
             <p>Portfolio of</p>
             <h1>Jacqueline Chabrny</h1>
             <h2>front-end developer based in Germany</h2>
+            <div class="d-grid gap-2 d-md-block mt-3 mb-4">
+              <a href="#" class="btn btn-branding">Contact Me</a>
+            </div>
           </div>
-          <div class="col-md-6 hero-2">
-          </br>
+          <div class="col-md-6 hero-2 mt-4 mb-3">
+            <br />
             <h3>Latest coding project:</h3>
             <div><p>Need to find out the meaning of a word ?</p></div>
-            <div><p>Click on the button to open a dictionary app.</p></div>
-
-            <div class="d-grid gap-2 d-md-block">
-              <a href="#" class="btn btn-branding">Dictionary App</a>
+            <div>
+              <p>Click to open a <a href="#">dictionary app</a>.</p>
             </div>
           </div>
-              </div>
         </div>
-        </div>
-            </div>
+      </div>
+    </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8 mb-4">
           <img
-            src="/images/dragonboat.jpg"
-            alt="dragonboat"
-            class="img-fluid dragonboat"
+            src="/images/hamburgalster.jpg"
+            alt="alster"
+            class="img-fluid hamburgalster"
           />
         </div>
         <div class="col-md-4 blog-glimpse">
-          <p>Blog Post 1: Why should you learn coding? With a coding skill, you can build anything you want - design an release an app, launch a website, start a blog. [...]</p>
-          <p>Blog Post 2: Is coding hard to learn? At first glance, learning to code may seem complicated, confusing, and hard to master. Much like any other skill, learning to code requires time and persistence. [...]</p>
+          <p>
+            <strong>Blog Post 1:</strong> Why should you learn coding? With a
+            coding skill, you can build anything you want - design an release an
+            app, launch a website, start a blog. <a href="#">[Read more]</a>
+          </p>
+          <p>
+            <strong>Blog Post 2:</strong> Is coding hard to learn? At first
+            glance, learning to code may seem complicated, confusing, and hard
+            to master. Much like any other skill, learning to code requires time
+            and persistence.
+            <a href="#">[Read more]</a>
+          </p>
         </div>
       </div>
-      </div>
+    </div>
   </body>
 </html>
