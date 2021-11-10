@@ -81,6 +81,20 @@ a:hover {
   margin: 0 auto;
 }
 
+.weather-app {
+  max-width: 75%;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
+.dictionary-app {
+  max-width: 60%;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
 .blog-glimpse p {
   text-align: left;
   color: black;
@@ -143,4 +157,8 @@ a:hover {
 .container-about {
   margin: 90px;
   text-align: center;
+}
+
+.container-portfolio {
+  margin: 90px;
 }
