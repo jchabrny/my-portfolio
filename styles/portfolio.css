@@ -47,18 +47,13 @@ a:hover {
 
 footer {
   background-color: whitesmoke;
-  max-width: 100%;
-  display: block;
-  padding: 18px;
-  text-align: right;
 }
 
 .footer p {
   color: black;
-  opacity: 0.7;
   font-size: 16px;
-  margin: 20px auto;
-  line-height: 2;
+  text-align: right;
+  padding: 12px;
 }
 
 .container-about ul {
@@ -77,12 +72,12 @@ footer {
 }
 
 .hamburgalster {
-  max-width: 65%;
+  max-width: 85%;
   border: 15px solid;
   border-color: whitesmoke;
   border-radius: 4px;
   display: block;
-  margin: 0 auto;
+  margin-bottom: 110px;
 }
 
 .profilbild {
@@ -129,18 +124,16 @@ footer {
 }
 
 .blog-glimpse p {
-  text-align: left;
+  text-align: justify;
   color: black;
-  opacity: 0.7;
   font-size: 16px;
-  margin: 20px auto;
   line-height: 2;
 }
 
 .hero {
   max-width: 100%;
   display: block;
-  margin: 35px auto;
+  margin: 80px 0;
   background: #eeeeee;
   padding: 15px;
   text-align: center;
@@ -203,22 +196,39 @@ footer {
 }
 
 .container-blog {
-  margin: 80px;
+  margin: 110px 30px;
+  text-align: justify;
 }
 
 .container-blog h3 {
   opacity: 0.7;
 }
 
+.container-blog p {
+  color: black;
+  opacity: 0.7;
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 10px;
+}
+
 .container-contact {
-  margin: 90px;
+  margin: 90px 30px;
+}
+
+.container-contact h1 {
+  font-size: 32px;
+}
+
+.container-contact h3 {
+  font-size: 24px;
 }
 
 .container-coding-journey {
   max-width: 100%;
   background: #eeeeee;
   padding: 35px;
-  text-align: center;
+  text-align: justify;
 }
 
 .container-coding-journey p {
@@ -233,7 +243,47 @@ footer {
 @media (max-width: 960px) {
   .container-portfolio {
     margin: 90px 0;
+  }
+
+  .container-portfolio p {
+    text-align: justify;
+  }
+
+  .container-portfolio h1 {
     text-align: center;
+  }
+
+  .container-blog {
+    margin: 90px 20px;
+    text-align: justify;
+  }
+
+  .container-blog h1 {
+    text-align: center;
+  }
+
+  .container-blog p {
+    text-align: justify;
+  }
+
+  .container-about {
+    margin: 90px 20px;
+  }
+
+  .container-about p {
+    text-align: justify;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero o {
+    font-size: 18px;
   }
 }
 
@@ -241,15 +291,9 @@ footer {
   .container-portfolio h1 {
     font-size: 22px;
   }
-}
-
-@media (max-width: 960px) {
   .container-portfolio h2 {
     font-size: 28px;
   }
-}
-
-@media (max-width: 960px) {
   .footer {
     text-align: center;
   }
