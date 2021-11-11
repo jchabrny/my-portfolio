@@ -45,6 +45,22 @@ a:hover {
   color: var(--tertiary-color);
 }
 
+footer {
+  background-color: whitesmoke;
+  max-width: 100%;
+  display: block;
+  padding: 18px;
+  text-align: right;
+}
+
+.footer p {
+  color: black;
+  opacity: 0.7;
+  font-size: 16px;
+  margin: 20px auto;
+  line-height: 2;
+}
+
 .container-about ul {
   list-style-type: none;
   font-family: var(--default-font-family);
@@ -62,13 +78,17 @@ a:hover {
 
 .hamburgalster {
   max-width: 65%;
+  border: 15px solid;
+  border-color: whitesmoke;
   border-radius: 4px;
   display: block;
   margin: 0 auto;
 }
 
 .profilbild {
-  max-width: 80%;
+  max-width: 65%;
+  border: 15px solid;
+  border-color: whitesmoke;
   border-radius: 4px;
   display: block;
   margin: 0 auto;
@@ -82,6 +102,8 @@ a:hover {
 }
 
 .weather-app {
+  border: 15px solid;
+  border-color: whitesmoke;
   max-width: 75%;
   border-radius: 4px;
   display: block;
@@ -89,14 +111,18 @@ a:hover {
 }
 
 .dictionary-app {
-  max-width: 60%;
+  border: 15px solid;
+  border-color: whitesmoke;
+  max-width: 65%;
   border-radius: 4px;
   display: block;
   margin: 0 auto;
 }
 
 .blogimage {
-  max-width: 60%;
+  border: 15px solid;
+  border-color: whitesmoke;
+  max-width: 70%;
   border-radius: 4px;
   display: block;
   margin: 0 auto;
@@ -136,7 +162,7 @@ a:hover {
   background: var(--tertiary-color);
   border-radius: 4px;
   border: 1px solid var();
-  color: var(--button-color);
+  color: whitesmoke;
   font-size: 16px;
   font-family: var(--heading-font-family);
   box-shadow: 8px 4px 4px lightgrey;
@@ -147,8 +173,8 @@ a:hover {
   color: var(--secondary-color);
 }
 
-.btn-brandingapp:hover {
-  color: var(--secondary-color);
+.container-portfolio a {
+  box-shadow: 8px 4px 4px darkgrey;
 }
 
 .container-about {
@@ -169,19 +195,62 @@ a:hover {
 }
 
 .container-portfolio p {
-  font-family: var(--default-font-family);
-  color: black;
-  opacity: 0.4;
-  font-size: 20px;
-  margin: 20px auto;
-  line-height: 2;
   text-align: left;
+  color: black;
+  opacity: 0.7;
+  font-size: 16px;
+  line-height: 2;
 }
 
 .container-blog {
-  margin: 90px;
+  margin: 80px;
+}
+
+.container-blog h3 {
+  opacity: 0.7;
 }
 
 .container-contact {
   margin: 90px;
+}
+
+.container-coding-journey {
+  max-width: 100%;
+  background: #eeeeee;
+  padding: 35px;
+  text-align: center;
+}
+
+.container-coding-journey p {
+  text-align: left;
+  color: black;
+  opacity: 0.7;
+  font-size: 16px;
+  margin: 20px auto;
+  line-height: 2;
+}
+
+@media (max-width: 960px) {
+  .container-portfolio {
+    margin: 90px 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 960px) {
+  .container-portfolio h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 960px) {
+  .container-portfolio h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 960px) {
+  .footer {
+    text-align: center;
+  }
 }
