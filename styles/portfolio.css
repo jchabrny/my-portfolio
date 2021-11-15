@@ -288,6 +288,8 @@ footer {
   font-size: 32px;
 }
 
+.container-technologies p {text-align: center;}
+
 @media (max-width: 960px) {
   .container-portfolio h1 {
     font-size: 22px;
