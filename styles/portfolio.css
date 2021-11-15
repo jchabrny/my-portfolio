@@ -91,7 +91,7 @@ footer {
 
 .hamburggraffiti {
   max-width: 45%;
-   border: 10px solid;
+  border: 10px solid;
   border-color: whitesmoke;
   border-radius: 4px;
   display: block;
@@ -284,12 +284,8 @@ footer {
     font-size: 22px;
   }
 
-.container-technologies h2 {
-  font-size: 32px;
-}
-
-.container-technologies p {text-align: center;}
-
+  .container-technologies p {text-align: center;}
+  
 @media (max-width: 960px) {
   .container-portfolio h1 {
     font-size: 22px;
