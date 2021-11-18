@@ -52,8 +52,21 @@ footer {
 .footer p {
   color: black;
   font-size: 16px;
-  text-align: right;
-  padding: 12px;
+}
+
+footer .social-links a {
+  margin: 20px;
+  color: var(--secondary-color);
+  background-color: var(--button-color);
+  padding: 10px 14px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background-color: var(--secondary-color);
+  transition: all 100ms ease-in-out;
 }
 
 .container-about ul {
@@ -221,6 +234,8 @@ footer {
 
 .content-container h1 {
   font-size: 32px;
+  color: black;
+  opacity: 0.8;
 }
 
 .content-container h3 {
@@ -229,7 +244,9 @@ footer {
   opacity: 0.7;
 }
 
-.content-container p {font-size: 18px;}
+.content-container p {
+  font-size: 18px;
+}
 
 .container-coding-journey {
   max-width: 100%;
@@ -289,8 +306,11 @@ footer {
     font-size: 22px;
   }
 
-  .container-technologies p {text-align: center;}
-  
+  .container-technologies p {
+    text-align: center;
+  }
+}
+
 @media (max-width: 960px) {
   .container-portfolio h1 {
     font-size: 22px;
