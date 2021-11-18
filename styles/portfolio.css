@@ -2,13 +2,42 @@
   --branding-color: #a7bcb9;
   --secondary-color: #38598b;
   --tertiary-color: #7b93bc;
-  --button-color: #f0d78c;
+  --highlight-color: #f0d78c;
   --heading-font-family: "Baloo Da 2", cursive;
   --default-font-family: "Tauri", sans-serif;
 }
 
 body {
   background: var(--branding-color);
+  margin: 130px 0;
+}
+
+nav .active {
+  color: var(--secondary-color) !important;
+}
+
+footer {
+  background-color: whitesmoke;
+}
+
+footer p {
+  color: black;
+  font-size: 14px;
+}
+
+footer .social-links a {
+  margin: 20px;
+  color: var(--secondary-color);
+  background-color: var(--highlight-color);
+  padding: 10px 14px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background-color: var(--secondary-color);
+  transition: all 100ms ease-in-out;
 }
 
 h1,
@@ -45,107 +74,22 @@ a:hover {
   color: var(--tertiary-color);
 }
 
-footer {
-  background-color: whitesmoke;
-}
-
-.footer p {
-  color: black;
+.btn-branding {
+  background: var(--tertiary-color);
+  border-radius: 4px;
+  border: 1px solid var();
+  color: whitesmoke;
   font-size: 16px;
+  font-family: var(--heading-font-family);
+  box-shadow: 8px 4px 4px lightgrey;
+  opacity: 0.8;
 }
 
-footer .social-links a {
-  margin: 20px;
+.btn-branding:hover {
   color: var(--secondary-color);
-  background-color: var(--button-color);
-  padding: 10px 14px;
-  font-size: 20px;
-  border-radius: 50%;
 }
 
-footer .social-links a:hover {
-  color: white;
-  background-color: var(--secondary-color);
-  transition: all 100ms ease-in-out;
-}
-
-.container-about ul {
-  list-style-type: none;
-  font-family: var(--default-font-family);
-  color: black;
-  opacity: 0.7;
-  font-size: 20px;
-  margin: 20px auto;
-  line-height: 2;
-  text-align: left;
-}
-
-.active {
-  color: var(--secondary-color) !important;
-}
-
-.hamburgalster {
-  max-width: 85%;
-  border: 15px solid;
-  border-color: whitesmoke;
-  border-radius: 4px;
-  display: block;
-  margin-bottom: 110px;
-}
-
-.profilbild {
-  max-width: 65%;
-  border: 15px solid;
-  border-color: whitesmoke;
-  border-radius: 4px;
-  display: block;
-  margin: 0 auto;
-}
-
-.hamburggraffiti {
-  max-width: 45%;
-  border: 10px solid;
-  border-color: whitesmoke;
-  border-radius: 4px;
-  display: block;
-  margin: 0 auto;
-}
-
-.weather-app {
-  border: 15px solid;
-  border-color: whitesmoke;
-  max-width: 75%;
-  border-radius: 4px;
-  display: block;
-  margin: 0 auto;
-}
-
-.dictionary-app {
-  border: 15px solid;
-  border-color: whitesmoke;
-  max-width: 65%;
-  border-radius: 4px;
-  display: block;
-  margin: 0 auto;
-}
-
-.blogimage {
-  border: 15px solid;
-  border-color: whitesmoke;
-  max-width: 25%;
-  border-radius: 4px;
-  display: block;
-  margin: 0 auto;
-}
-
-.blog-glimpse p {
-  text-align: justify;
-  color: black;
-  font-size: 16px;
-  line-height: 2;
-}
-
-.hero {
+.hero-container {
   max-width: 100%;
   display: block;
   margin: 80px 0;
@@ -166,43 +110,41 @@ footer .social-links a:hover {
   line-height: 1.6;
 }
 
-.btn-branding {
-  background: var(--tertiary-color);
-  border-radius: 4px;
-  border: 1px solid var();
-  color: whitesmoke;
+.blog-glimpse p {
+  text-align: justify;
+  color: black;
   font-size: 16px;
-  font-family: var(--heading-font-family);
-  box-shadow: 8px 4px 4px lightgrey;
-  opacity: 0.8;
+  line-height: 2;
 }
 
-.btn-branding:hover {
-  color: var(--secondary-color);
-}
-
-.container-portfolio a {
-  box-shadow: 8px 4px 4px darkgrey;
-}
-
-.container-about {
-  margin: 90px;
+.about-container {
   text-align: center;
 }
 
-.container-portfolio {
+.about-container ul {
+  list-style-type: none;
+  font-family: var(--default-font-family);
+  color: black;
+  opacity: 0.7;
+  font-size: 20px;
+  margin: 20px auto;
+  line-height: 2;
+  text-align: left;
+}
+
+.portfolio-container {
   margin: 90px;
 }
 
-.container-portfolio h1 {
+.portfolio-container h1 {
   font-size: 32px;
 }
 
-.container-portfolio h2 {
+.portfolio-container h2 {
   font-size: 42px;
 }
 
-.container-portfolio p {
+.portfolio-container p {
   text-align: left;
   color: black;
   opacity: 0.7;
@@ -210,16 +152,51 @@ footer .social-links a:hover {
   line-height: 2;
 }
 
-.container-blog {
-  margin: 110px 30px;
+.portfolio-container img {
+  border: 15px solid;
+  border-color: whitesmoke;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
+.portfolio-container .weather-app {
+  max-width: 75%;
+}
+
+.portfolio-container .dictionary-app {
+  max-width: 65%;
+}
+
+.portfolio-container a {
+  box-shadow: 8px 4px 4px darkgrey;
+}
+
+.codingjourney-container {
+  max-width: 100%;
+  background: #eeeeee;
+  padding: 50px;
   text-align: justify;
 }
 
-.container-blog h3 {
+.codingjourney-container p {
+  text-align: left;
+  color: black;
+  opacity: 0.7;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.blog-container {
+  margin: 90px 30px;
+  text-align: justify;
+}
+
+.blog-container h3 {
   opacity: 0.7;
 }
 
-.container-blog p {
+.blog-container p {
   color: black;
   opacity: 0.7;
   font-size: 18px;
@@ -227,8 +204,22 @@ footer .social-links a:hover {
   padding: 10px;
 }
 
+.blog-container .blogimage {
+  border: 15px solid;
+  border-color: whitesmoke;
+  max-width: 25%;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
+.blogcontent-container {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
 .content-container {
-  margin: 90px 30px;
+  margin: 160px 0;
   text-align: center;
 }
 
@@ -241,63 +232,40 @@ footer .social-links a:hover {
 .content-container h3 {
   font-size: 26px;
   line-height: 2;
-  opacity: 0.7;
 }
 
 .content-container p {
   font-size: 18px;
 }
 
-.container-coding-journey {
-  max-width: 100%;
-  background: #eeeeee;
-  padding: 35px;
-  text-align: justify;
+.hamburgalster {
+  border: 15px solid;
+  border-color: whitesmoke;
+  border-radius: 4px;
+  display: block;
+  max-width: 85%;
+  margin-bottom: 110px;
 }
 
-.container-coding-journey p {
-  text-align: left;
-  color: black;
-  opacity: 0.7;
-  font-size: 16px;
-  margin: 20px auto;
-  line-height: 2;
+.profilepicture {
+  max-width: 65%;
+  border: 15px solid;
+  border-color: whitesmoke;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
+.hamburggraffiti {
+  max-width: 45%;
+  border: 10px solid;
+  border-color: whitesmoke;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: 960px) {
-  .container-portfolio {
-    margin: 90px 0;
-  }
-
-  .container-portfolio p {
-    text-align: justify;
-  }
-
-  .container-portfolio h1 {
-    text-align: center;
-  }
-
-  .container-blog {
-    margin: 90px 20px;
-    text-align: justify;
-  }
-
-  .container-blog h1 {
-    text-align: center;
-  }
-
-  .container-blog p {
-    text-align: justify;
-  }
-
-  .container-about {
-    margin: 90px 20px;
-  }
-
-  .container-about p {
-    text-align: justify;
-  }
-
   .hero h1 {
     font-size: 28px;
   }
@@ -306,19 +274,54 @@ footer .social-links a:hover {
     font-size: 22px;
   }
 
-  .container-technologies p {
+  .about-container {
+    margin: 90px 20px;
+  }
+
+  .about-container p {
+    text-align: justify;
+  }
+
+  .technologies-container p {
     text-align: center;
   }
-}
 
-@media (max-width: 960px) {
-  .container-portfolio h1 {
+  .portfolio-container {
+    margin: 90px 0;
+  }
+
+  .portfolio-container h1 {
+    text-align: center;
     font-size: 22px;
   }
-  .container-portfolio h2 {
+
+  .portfolio-container h2 {
     font-size: 28px;
   }
-  .footer {
+
+  .portfolio-container p {
+    text-align: justify;
+  }
+
+  .codingjourney-container h2 {
+    font-size: 20px;
     text-align: center;
+  }
+
+  .codingjourney-container p {
+    text-align: justify;
+  }
+
+  .blog-container {
+    margin: 90px 20px;
+    text-align: justify;
+  }
+
+  .blog-container h1 {
+    text-align: center;
+  }
+
+  .blog-container p {
+    text-align: justify;
   }
 }

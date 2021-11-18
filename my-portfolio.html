@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jacqueline coded several apps. Amongst her projects you can find a dictionary app and a weather app with live data."
+    />
     <title>Jacqueline Chabrny's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,7 +41,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container-fluid">
-        <a class="logo" href="/">Mein Logo</a>
+        <a class="logo" href="/" title="Homepage">Mein Logo</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -52,43 +56,57 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/">Home</a>
+              <a class="nav-link" href="/" title="Homepage">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about-me.html">About</a>
+              <a class="nav-link" href="/about-me.html" title="About Jacqueline"
+                >About</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/my-portfolio.html">Work</a>
+              <a
+                class="nav-link active"
+                href="/my-portfolio.html"
+                title="Jacqueline's work"
+                >Work</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/blog.html">Blog</a>
+              <a class="nav-link" href="/blog.html" title="Blog about coding"
+                >Blog</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact.html">Contact</a>
+              <a
+                class="nav-link"
+                href="/contact.html"
+                title="Contact Jacqueline"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="container-portfolio">
-      <h1>My Portfolio of Coding Projects</h1>
+    <div class="portfolio-container">
+      <h1>Jacqueline's Portfolio of Coding Projects</h1>
       <div class="container mt-5 text-center">
         <div class="row">
           <div class="col d-none d-lg-block">
             <img
               src="/images/weatherapp.JPG"
-              alt="weather-app"
+              alt="weather project preview"
               class="img-fluid weather-app"
             />
           </div>
           <div class="col">
             <h2>Weather App</h2>
             <p>
-              Coding the weather app, I integrated a live Application
-              Programming Interface (API). The interactive weather application
-              is based on advanced JavaScript techniques (ES6). One of the
-              challenges of coding the app was to create a loop to run the
-              weekly forecast from the API.
+              This interactive weather application is based on advanced
+              JavaScript techniques. A live API is integrated in the Weather App
+              code to fetch realtime weather data such as the current
+              temperature. One of the challenges of coding the app was the
+              creation of a loop to run the weekly forecast from the API.
             </p>
             <a
               href="https://epic-bardeen-e5c3c3.netlify.app/"
@@ -104,10 +122,9 @@
           <div class="col">
             <h2>Dictionary App</h2>
             <p>
-              The dictionary app is coded using the framework React. React is a
-              JavaScript library for building user interfaces. The dictionary
-              app is based on an API. I set up React with Axios for fetching the
-              data (the respective word definition searched for) from the API
+              The dictionary app is coded using the JavaScript library React and
+              is based on an API. The set-up of React with Axios enables the
+              data fetching of the searched word definition from the API
               endpoint.
             </p>
             <a
@@ -120,22 +137,21 @@
           <div class="col d-none d-lg-block">
             <img
               src="/images/dictionaryapp.JPG"
-              alt="dictionary-app"
+              alt="dictionary project preview"
               class="img-fluid dictionary-app"
             />
           </div>
         </div>
       </div>
     </div>
-    <div class="container-coding-journey mt-2 mb-5">
+    <div class="codingjourney-container">
       <div class="row">
         <div class="col-md-8">
-          <h2>My coding journey</h2>
+          <h2>Jacqueline's Coding Journey</h2>
           <p>
-            During the coding classes I learned how to use Git and GitHub to
-            manage my code in a streamlined development workflow. While learning
-            the basics of React, I got to know how to structure professionally a
-            coding project.
+            Learning how to use Git and GitHub to manage the code, Jacqueline
+            works in a streamlined development workflow and structures
+            professionally her coding projects.
           </p>
         </div>
         <div class="col-md-4 mt-4">
@@ -145,18 +161,35 @@
     </div>
     <footer class="fixed-bottom">
       <div class="social-links d-flex justify-content-center">
-        <a href="https://github.com/jchabrny/my-portfolio" target="_blank"
+        <a
+          href="https://github.com/jchabrny/my-portfolio"
+          target="_blank"
+          title="Go to Github repository"
           ><i class="fab fa-github"></i
         ></a>
         <a
           href="https://de.linkedin.com/in/dr-jacqueline-chabrny-6a1273149"
           target="_blank"
+          title="Go to LinkedIn Profile"
           ><i class="fab fa-linkedin"></i
         ></a>
-        <a href="https://www.instagram.com/schakschantal/" target="_blank"
+        <a
+          href="https://www.instagram.com/schakschantal/"
+          target="_blank"
+          title="Go to .LawCode"
           ><i class="fab fa-instagram"></i
         ></a>
       </div>
+      <p class="text-center">
+        This project was coded by Jacqueline Chabrny and is
+        <a
+          href="https://github.com/jchabrny/my-portfolio"
+          target="_blank"
+          title="Go to Github profile"
+          >open-sourced</a
+        >
+        🥜
+      </p>
     </footer>
   </body>
 </html>
