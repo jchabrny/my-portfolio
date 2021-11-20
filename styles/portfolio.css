@@ -18,20 +18,23 @@ nav .active {
 }
 
 footer {
-  background-color: whitesmoke;
+  background: white;
 }
 
 footer p {
   color: black;
   font-size: 14px;
+  margin-top: -50px;
+  margin-right: 20px;
+  text-align: right;
 }
 
 footer .social-links a {
-  margin: 20px;
+  margin: 5px 20px 20px 20px;
   color: var(--secondary-color);
   background-color: var(--highlight-color);
-  padding: 10px 14px;
-  font-size: 20px;
+  padding: 8px 12px;
+  font-size: 15px;
   border-radius: 50%;
 }
 
@@ -133,6 +136,14 @@ a:hover {
   text-align: left;
 }
 
+.technologies-container .icon {
+  font-size: 60px;
+}
+
+.technologies-container p {
+  font-size: 16px;
+}
+
 .portfolio-container {
   margin: 90px;
 }
@@ -170,7 +181,7 @@ a:hover {
 }
 
 .portfolio-container a {
-  box-shadow: 8px 4px 4px darkgrey;
+  box-shadow: 8px 4px 4px lightgrey;
 }
 
 .codingjourney-container {
@@ -264,9 +275,13 @@ a:hover {
     text-align: justify;
   }
 
+  .technologies-container .icon {
+    font-size: 28px;
+  }
+
   .technologies-container p {
-    font-size: 10px;
     text-align: center;
+    font-size: 12px;
   }
 
   .portfolio-container {
@@ -306,5 +321,12 @@ a:hover {
 
   .blog-container p {
     text-align: justify;
+  }
+
+  footer p {
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 0 10px 0;
   }
 }
