@@ -1,15 +1,16 @@
 :root {
-  --branding-color: #a7bcb9;
-  --secondary-color: #38598b;
-  --tertiary-color: #7b93bc;
+  --branding-color: white;
+  --secondary-color: black;
+  --tertiary-color: grey;
   --highlight-color: #f0d78c;
-  --heading-font-family: "Baloo Da 2", cursive;
+  --heading-font-family: "Annie Use Your Telescope", cursive;
   --default-font-family: "Tauri", sans-serif;
 }
 
 body {
   background: var(--branding-color);
-  margin: 130px 0;
+  margin-top: 65px;
+  margin-bottom: 130px;
 }
 
 nav .active {
@@ -49,7 +50,7 @@ h2 {
 
 h2 {
   opacity: 0.9;
-  font-size: 24px;
+  font-size: 28px;
   line-height: 1.5;
 }
 
@@ -75,27 +76,26 @@ a:hover {
 }
 
 .btn-branding {
-  background: var(--tertiary-color);
+  background: transparent;
   border-radius: 4px;
-  border: 1px solid var();
-  color: whitesmoke;
+  border: 1px solid black;
+  color: black;
   font-size: 16px;
-  font-family: var(--heading-font-family);
+  font-family: var(--default-font-family);
   box-shadow: 8px 4px 4px lightgrey;
   opacity: 0.8;
 }
 
 .btn-branding:hover {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 
 .hero-container {
   max-width: 100%;
   display: block;
-  margin: 80px 0;
-  background: #eeeeee;
+  margin: 40px 0;
   padding: 15px;
-  text-align: center;
+  text-align: left;
 }
 
 .hero p {
@@ -119,6 +119,7 @@ a:hover {
 
 .about-container {
   text-align: center;
+  margin: 100px 0 0 30px;
 }
 
 .about-container ul {
@@ -205,61 +206,42 @@ a:hover {
 }
 
 .blog-container .blogimage {
-  border: 15px solid;
-  border-color: whitesmoke;
-  max-width: 25%;
+  max-width: 55%;
   border-radius: 4px;
   display: block;
   margin: 0 auto;
+  opacity: 0.7;
 }
 
-.blogcontent-container {
-  margin-top: 30px;
-  margin-bottom: 80px;
-}
-
-.content-container {
+.contact-container {
   margin: 160px 0;
   text-align: center;
 }
 
-.content-container h1 {
+.contact-container h1 {
   font-size: 32px;
   color: black;
   opacity: 0.8;
 }
 
-.content-container h3 {
+.contact-container h3 {
   font-size: 26px;
   line-height: 2;
 }
 
-.content-container p {
+.contact-container p {
   font-size: 18px;
 }
 
-.hamburgalster {
-  border: 15px solid;
-  border-color: whitesmoke;
+.heroimage {
   border-radius: 4px;
   display: block;
-  max-width: 85%;
-  margin-bottom: 110px;
+  max-width: 75%;
+  margin-left: 120px;
 }
 
 .profilepicture {
-  max-width: 65%;
-  border: 15px solid;
-  border-color: whitesmoke;
-  border-radius: 4px;
-  display: block;
-  margin: 0 auto;
-}
-
-.hamburggraffiti {
-  max-width: 45%;
-  border: 10px solid;
-  border-color: whitesmoke;
+  max-width: 125%;
   border-radius: 4px;
   display: block;
   margin: 0 auto;
@@ -283,6 +265,7 @@ a:hover {
   }
 
   .technologies-container p {
+    font-size: 10px;
     text-align: center;
   }
 
