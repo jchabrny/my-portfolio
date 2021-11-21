@@ -1,6 +1,6 @@
 :root {
-  --branding-color: white;
-  --secondary-color: black;
+  --branding-color: #4cafbf;
+  --secondary-color: #e05c47;
   --tertiary-color: #8dc09f;
   --highlight-color: #94cad2;
   --heading-font-family: "Annie Use Your Telescope", cursive;
@@ -8,7 +8,7 @@
 }
 
 body {
-  background: var(--branding-color);
+  background: white;
   margin-top: 120px;
   margin-bottom: 130px;
 }
@@ -30,8 +30,8 @@ footer p {
 }
 
 footer .social-links a {
-  margin: 5px 20px 20px 20px;
-  color: var(--secondary-color);
+  margin: 5px 20px 25px 20px;
+  color: black;
   background-color: var(--highlight-color);
   padding: 8px 12px;
   font-size: 15px;
@@ -40,7 +40,7 @@ footer .social-links a {
 
 footer .social-links a:hover {
   color: white;
-  background-color: var(--secondary-color);
+  background-color: black;
   transition: all 100ms ease-in-out;
 }
 
@@ -51,7 +51,7 @@ h1 {
 }
 
 h2 {
-  color: var(--highlight-color);
+  color: var(--branding-color);
   font-family: var(--heading-font-family);
   font-weight: bold;
   opacity: 0.9;
@@ -66,7 +66,7 @@ h3 {
 
 p {
   font-family: var(--default-font-family);
-  color: var(--secondary-color);
+  color: black;
   font-size: 22px;
   opacity: 0.7;
 }
@@ -77,7 +77,7 @@ a {
 }
 
 a:hover {
-  color: var(--tertiary-color);
+  color: var(--branding-color);
 }
 
 .btn-branding {
@@ -92,7 +92,7 @@ a:hover {
 }
 
 .btn-branding:hover {
-  color: var(--tertiary-color);
+  color: black;
 }
 
 .hero-container {
@@ -100,6 +100,7 @@ a:hover {
   display: block;
   padding: 15px;
   text-align: center;
+  margin-top: -20px;
 }
 
 .hero-container .heroimage-small {
@@ -145,6 +146,10 @@ a:hover {
 .technologies-container .icon {
   font-size: 60px;
   color: var(--highlight-color);
+}
+
+.technologies-container h2 {
+  font-size: 30px;
 }
 
 .technologies-container p {
@@ -239,6 +244,7 @@ a:hover {
   max-width: 45%;
   display: block;
   margin: 0 auto;
+  opacity: 0.9;
 }
 
 .contact-container {
