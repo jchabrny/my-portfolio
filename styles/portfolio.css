@@ -1,15 +1,15 @@
 :root {
   --branding-color: white;
   --secondary-color: black;
-  --tertiary-color: grey;
-  --highlight-color: #f0d78c;
+  --tertiary-color: #8dc09f;
+  --highlight-color: #94cad2;
   --heading-font-family: "Annie Use Your Telescope", cursive;
   --default-font-family: "Tauri", sans-serif;
 }
 
 body {
   background: var(--branding-color);
-  margin-top: 65px;
+  margin-top: 120px;
   margin-bottom: 130px;
 }
 
@@ -44,14 +44,16 @@ footer .social-links a:hover {
   transition: all 100ms ease-in-out;
 }
 
-h1,
-h2 {
-  color: var(--secondary-color);
+h1 {
+  color: var(--tertiary-color);
   font-family: var(--heading-font-family);
   font-weight: bold;
 }
 
 h2 {
+  color: var(--highlight-color);
+  font-family: var(--heading-font-family);
+  font-weight: bold;
   opacity: 0.9;
   font-size: 28px;
   line-height: 1.5;
@@ -79,10 +81,10 @@ a:hover {
 }
 
 .btn-branding {
-  background: transparent;
+  background: var(--highlight-color);
   border-radius: 4px;
-  border: 1px solid black;
-  color: black;
+  border: groove;
+  color: white;
   font-size: 16px;
   font-family: var(--default-font-family);
   box-shadow: 8px 4px 4px lightgrey;
@@ -96,9 +98,12 @@ a:hover {
 .hero-container {
   max-width: 100%;
   display: block;
-  margin: 40px 0;
   padding: 15px;
-  text-align: left;
+  text-align: center;
+}
+
+.hero-container .heroimage-small {
+  width: 100%;
 }
 
 .hero p {
@@ -113,16 +118,13 @@ a:hover {
   line-height: 1.6;
 }
 
-.blog-glimpse p {
-  text-align: justify;
-  color: black;
-  font-size: 16px;
-  line-height: 2;
-}
-
 .about-container {
   text-align: center;
   margin: 100px 0 0 30px;
+}
+
+.about-container .profilepicture-small {
+  width: 80%;
 }
 
 .about-container ul {
@@ -136,8 +138,13 @@ a:hover {
   text-align: left;
 }
 
+.about-container .about-me i {
+  color: var(--tertiary-color);
+}
+
 .technologies-container .icon {
   font-size: 60px;
+  color: var(--highlight-color);
 }
 
 .technologies-container p {
@@ -145,7 +152,7 @@ a:hover {
 }
 
 .portfolio-container {
-  margin: 90px;
+  margin: 110px;
 }
 
 .portfolio-container h1 {
@@ -156,8 +163,12 @@ a:hover {
   font-size: 42px;
 }
 
+.portfolio-container .app-description {
+  margin: 35px;
+}
+
 .portfolio-container p {
-  text-align: left;
+  text-align: justify;
   color: black;
   opacity: 0.7;
   font-size: 16px;
@@ -165,19 +176,21 @@ a:hover {
 }
 
 .portfolio-container img {
-  border: 15px solid;
-  border-color: whitesmoke;
-  border-radius: 4px;
+  border: 2px solid;
+  border-color: var(--tertiary-color);
+  border-radius: 25px;
+  padding: 40px 120px;
   display: block;
   margin: 0 auto;
+  opacity: 0.8;
 }
 
 .portfolio-container .weather-app {
-  max-width: 75%;
+  max-width: 100%;
 }
 
 .portfolio-container .dictionary-app {
-  max-width: 65%;
+  max-width: 100%;
 }
 
 .portfolio-container a {
@@ -191,6 +204,10 @@ a:hover {
   text-align: justify;
 }
 
+.codingjourney-description {
+  padding: 0 150px;
+}
+
 .codingjourney-container p {
   text-align: left;
   color: black;
@@ -200,12 +217,14 @@ a:hover {
 }
 
 .blog-container {
-  margin: 90px 30px;
+  margin: 0 30px;
   text-align: justify;
 }
 
-.blog-container h3 {
+.blog-container h1 {
+  font-size: 28px;
   opacity: 0.7;
+  text-align: center;
 }
 
 .blog-container p {
@@ -217,11 +236,9 @@ a:hover {
 }
 
 .blog-container .blogimage {
-  max-width: 55%;
-  border-radius: 4px;
+  max-width: 45%;
   display: block;
   margin: 0 auto;
-  opacity: 0.7;
 }
 
 .contact-container {
@@ -231,8 +248,6 @@ a:hover {
 
 .contact-container h1 {
   font-size: 32px;
-  color: black;
-  opacity: 0.8;
 }
 
 .contact-container h3 {
@@ -244,8 +259,12 @@ a:hover {
   font-size: 18px;
 }
 
+.logoimage {
+  max-width: 80px;
+  margin-top: 10px;
+}
+
 .heroimage {
-  border-radius: 4px;
   display: block;
   max-width: 75%;
   margin-left: 120px;
@@ -275,6 +294,12 @@ a:hover {
     text-align: justify;
   }
 
+  .about-container li {
+    font-size: 16px;
+    line-height: 2.5;
+    text-align: center;
+  }
+
   .technologies-container .icon {
     font-size: 28px;
   }
@@ -290,7 +315,7 @@ a:hover {
 
   .portfolio-container h1 {
     text-align: center;
-    font-size: 22px;
+    font-size: 26px;
   }
 
   .portfolio-container h2 {
@@ -301,7 +326,11 @@ a:hover {
     text-align: justify;
   }
 
-  .codingjourney-container h2 {
+  .codingjourney-description {
+    padding: 0;
+  }
+
+  .codingjourney-container h3 {
     font-size: 20px;
     text-align: center;
   }
@@ -315,8 +344,15 @@ a:hover {
     text-align: justify;
   }
 
+  .blog-container .blogimage {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
   .blog-container h1 {
-    text-align: center;
+    font-size: 24px;
+    line-height: 1.5;
   }
 
   .blog-container p {

@@ -41,7 +41,12 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
       <div class="container-fluid">
-        <a class="logo" href="/" title="Homepage">Mein Logo</a>
+        <a class="logo" href="/" title="Homepage"
+          ><img
+            src="/images/logowithoutframe.png"
+            alt="logo"
+            class="img-fluid logoimage"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -92,20 +97,19 @@
       </div>
     </nav>
     <div class="blog-container">
-      <h1>Blog</h1>
-      <h3>
-        Thinking of learning to code? You love problem solving? You enjoy being
-        creative?
-      </h3>
-      <br />
-      <div class="d-none d-lg-block">
+      <div class="">
         <img
-          src="/images/jackyfromback.png"
+          src="/images/blog.png"
           alt="blog-image"
           class="img-fluid blogimage"
         />
       </div>
-      <div class="blogcontent-container">
+      <h1>
+        <div>Thinking of learning to code?</div>
+        <div>You love problem solving?</div>
+        <div>You enjoy being creative?</div>
+      </h1>
+      <div class="blogcontent-container mt-4">
         <div class="row">
           <div class="col-sm-3 col-md-6">
             <p>
@@ -164,14 +168,14 @@
       </span>
       <span>
         <p>
-          This project was coded by Jacqueline Chabrny and is
+          This project was coded by Jacky and is
           <a
             href="https://github.com/jchabrny/my-portfolio"
             target="_blank"
             title="Go to Github profile"
             >open-sourced</a
           >
-          🥜
+          <i class="fas fa-mug-hot"></i>
         </p>
       </span>
     </footer>
