@@ -198,10 +198,6 @@ a:hover {
   max-width: 100%;
 }
 
-.portfolio-container a {
-  box-shadow: 8px 4px 4px lightgrey;
-}
-
 .codingjourney-container {
   max-width: 100%;
   background: #eeeeee;
@@ -350,12 +346,6 @@ a:hover {
     text-align: justify;
   }
 
-  .blog-container .blogimage {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-  }
-
   .blog-container h1 {
     font-size: 24px;
     line-height: 1.5;
@@ -363,6 +353,12 @@ a:hover {
 
   .blog-container p {
     text-align: justify;
+  }
+
+  .blog-container .blogimage {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
   }
 
   footer p {
